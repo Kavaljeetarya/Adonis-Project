@@ -39,4 +39,4 @@ jobs:
           app-name: 'adoniswebapp'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_37D9357C0AD94728B3E23B4AC8E5E019 }}
-          package: ./dist/deploy-to-webapp
+          package: ./build
