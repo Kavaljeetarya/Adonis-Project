@@ -24,7 +24,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm build
+        npm run build
 
         # Add the production dependencies step
     - name: npm production
@@ -36,5 +36,5 @@ jobs:
       with:
         app-name: 'adoniswebapp'
         slot-name: 'Production'
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8654DFC6750A418FAEC5179DF79F8688 }
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8654DFC6750A418FAEC5179DF79F8688 }}
         package: ./build/server.js
