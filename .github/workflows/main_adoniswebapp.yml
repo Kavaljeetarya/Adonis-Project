@@ -37,4 +37,4 @@ jobs:
         app-name: 'adoniswebapp'
         slot-name: 'Production'
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8654DFC6750A418FAEC5179DF79F8688 }}
-        package: ./build/server.js
+        package: ./build
